@@ -1,0 +1,76 @@
+/* ============================
+ RESPONSIVE CODES
+============================= */
+@media(max-width:1000px){
+    .banner3{
+        max-height: fit-content;
+    }
+    .banner3 img{
+        display: none;
+    }
+}
+@media(max-width:830px){
+    .contact_us .container{
+        background-image: none;
+    }
+    .contact_us .container form{
+        max-width: 100%;
+    }
+    footer .top{
+        flex-direction: column;
+    }
+    footer .contact{
+        flex-direction: column;
+    }
+    footer .contact form,
+    footer .contact .right{
+        width: 100%;
+    }
+}
+@media(max-width:780px){
+    header .links{
+        display: none;
+    }
+    header .menu{
+        display: block;
+    }
+    main{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    main .right,
+    main .left{
+    width: 100%;
+    }
+    .title_all{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .case_stuides .container{
+        flex-wrap: wrap;
+        background-color: transparent;
+    }
+    .case_stuides section{
+        border: none;
+        margin: 10px 0;
+    }
+}
+@media(max-width:550px){
+    footer .top .links{
+        flex-direction: column;
+    }
+    footer .contact form{
+        flex-direction: column;
+    }
+    footer .contact form button,
+    footer .contact form input{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .testimontals .slider_controles{
+        gap: 20px;
+    }
+}

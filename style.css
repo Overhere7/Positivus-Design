@@ -1,0 +1,639 @@
+:root{
+    --main-color: #b9ff66;
+    --main-color2: #191a23;
+    --main-color3: #f3f3f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+/* ====================
+ TITLE ALL 
+======================*/
+.title_all{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 70%;
+    margin: 40px 0;
+    h2{
+        background-color: var(--main-color);
+        padding: 5px;
+        text-wrap: nowrap;
+    }
+}
+/* ====================
+ HEADER
+======================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 75px;
+}
+header .logo span{
+    margin-right: 10px;
+}
+header .links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .links a{
+    color: #000;
+    transition: .5s;
+}
+header .links .quote a{
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
+header .menu{
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+/* ===================
+ MAIN
+==================== */
+main{
+    min-height: var(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px 150px;
+    padding: 30px;
+}
+main img{
+    width: 80%;
+}
+main .right,
+main .left{
+    width: 50%;
+}
+main p{
+    margin: 20px 0;
+}
+main button{
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--main-color2);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/*===================
+ BANNER 1
+=================*/
+.banner1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+.banner1 img{
+    width: 100px;
+}
+/* ========================
+ SERVICES 
+========================*/
+.services {
+    padding: 10px 30px;
+}
+.services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, auto));
+    justify-content: center;
+    gap: 20px;
+}
+.services section{
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+}
+.services section.grey{
+    background-color: var(--main-color3);
+}
+.services section.green{
+    background-color: var(--main-color);
+}
+.services section.black{
+    background-color: var(--main-color2);
+    color: #fff;
+    a{
+        color: #fff;
+    }
+}
+.services section nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services section nav a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-size: 12px;
+    .fa-circle-up{
+        transform: rotate(25deg);
+        font-size: 22px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+.services section img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+/* ==================
+ BANNER 3
+=======================*/
+.banner3{
+    padding: 40px;
+    margin: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: var(--main-color3);
+    border-radius: 30px;
+    max-height: 200px;
+}
+.banner3 img{
+    width: 450px;
+}
+.banner3 p{
+    margin: 20px 0;
+}
+.banner3 button{
+    padding: 10px 30px;
+    border: 1px solid var(--main-color2);
+    background-color: var(--main-color2);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+    &:hover{
+        background-color: #fff;
+        color: var(--main-color2);
+    }
+}
+/* =====================
+ CASE STUDIES
+=========================*/
+.case_stuides{
+    padding: 20px;
+}
+.case_stuides .container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color2);
+    border-radius: 30px;
+}
+.case_stuides section{
+    background-color: var(--main-color2);
+    color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    margin: 30px 0;
+    &:last-child{
+        border: none;
+    }
+}
+.case_stuides section p{
+    margin: 20px 0;
+}
+.case_stuides section a{
+    color: var(--main-color);
+}
+
+/* =========================
+ STEPS
+=========================*/
+.steps{
+    padding: 30px;
+}
+.steps .title{
+    margin: 30px 0;
+}
+.steps section{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--main-color3);
+    border: 1px solid var(--main-color2);
+    border-bottom-width: 5px;
+    margin: 20px 0;
+}
+.steps section .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.steps section .top h3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.steps section .top span{
+    font-size: 30px;
+}
+.steps section .top .icon{
+    width: 1cm;
+    height: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid var(--main-color2);
+    color: #000;
+    font-weight: bold;
+}
+.steps section .content{
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid var(--main-color2);
+    display: none;
+}
+.steps section.active{
+    background-color: var(--main-color);
+    .content{
+        display: block;
+    }
+}
+/* ===================
+ TEAM
+=====================*/
+.team{
+    padding: 20px 30px;
+}
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, auto));
+    justify-content: center;
+    gap: 25px;
+}
+.team section{
+    border: 1px solid var(--main-color2);
+    border-bottom-width: 5px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+.team section .icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: .8cm;
+    height: .8cm;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team section .icon a{
+    color: var(--main-color);
+    display: block;
+    padding: 10px;
+}
+.team section .info{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--main-color2);
+}
+.team .image{
+   position: relative; 
+   width: 1.5cm;
+   text-align: center;
+}
+.team .image::before,
+.team .image::after{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 25px;
+    border-radius: 40%;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(35deg);
+    border-right: 4px solid var(--main-color2);
+    z-index: -1;
+}
+.team .image::after{
+    transform: translate(-50%,-50%) rotate(-35deg);
+    border-bottom: 4px solid var(--main-color2);
+    z-index: -2;
+}
+.team .image img{
+    width: 50px;
+}
+.team .link{
+    direction: rtl;
+    a{
+        display: block;
+        width: fit-content;
+        padding: 12px 35px;
+        border: 1px solid var(--main-color2);
+        background-color: var(--main-color2);
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: .5s;
+        &:hover{
+            background-color: #fff;
+            color: var(--main-color2);
+        }
+    }
+}
+
+/* =======================
+ TESTIMONIALS
+========================*/
+.testimontals{
+    padding: 20px 30px;
+}
+.testimontals .slider_items{
+    background-color: var(--main-color2);
+    color: #fff;
+    padding: 50px 30px;
+    display: flex;
+    overflow-x: auto;
+    border-radius: 20px 20px 0 0;
+}
+.testimontals .slider_items::-webkit-scrollbar{
+    height: 0;
+}
+.testimontals .slider_items section{
+    min-width: 400px;
+    padding: 30px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.testimontals .slider_items section::before{
+    position: absolute;
+    content: '';
+    width: .8cm;
+    height: .8cm;
+    border: 1px solid;
+    border-color: transparent var(--main-color) var(--main-color) transparent;
+    background-color: var(--main-color2);
+    bottom: -.4cm;
+    left: 40px;
+    transform: rotate(45deg);
+}
+.testimontals .slider_items section .overlay{
+    position: absolute;
+    bottom: -2cm;
+    left: 40px;
+    font-size: 14px;
+}
+.testimontals .slider_items section .overlay .name{
+    color: var(--main-color);
+}
+.testimontals .slider_controles{
+    background-color: var(--main-color2);
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.testimontals .slider_controles .points{
+    display: flex;
+    gap: 10px;
+}
+.testimontals .slider_controles .points span{
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.testimontals .slider_controles .points span::before,
+.testimontals .slider_controles .points span::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(35deg);
+}
+.testimontals .slider_controles .points span::after{
+    transform: translate(-50%,-50%) rotate(-35deg);
+}
+.testimontals .slider_controles .points span.active::before,
+.testimontals .slider_controles .points span.active::after{
+    background-color: var(--main-color);
+}
+.testimontals .slider_controles .arrow{
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        color: var(--main-color);
+    }
+}
+.testimontals .slider_controles .prev{
+    opacity: .6;
+}
+
+/* =======================
+ CONTACT
+=======================*/
+.contact_us{
+    padding: 20px 30px;
+}
+.contact_us .container{
+    padding: 30px;
+    background-color: var(--main-color3);
+    border-radius: 20px;
+    background-image: url(Images/contact.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.contact_us .container form{
+    max-width: 500px;
+    width: 100%;
+}
+.contact_us .container form .inputs_radio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    input{
+        width: fit-content !important;
+    }
+}
+.contact_us .container form input,
+.contact_us .container form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.contact_us .container form button{
+    width: 100%;
+    padding: 12px 35px;
+    border: 1px solid var(--main-color2);
+    background-color: var(--main-color2);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .5s;
+    &:hover{
+        background-color: #fff;
+        color: var(--main-color2);
+    }
+}
+/* =======================
+ FOOTER
+========================*/
+footer{
+    background-color: var(--main-color2);
+    color: #fff;
+    padding: 30px;
+    margin: 0 30px;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+}
+footer .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+footer .top .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span{
+        font-size: 22px;
+    }
+}
+footer .top .links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+footer .top .links a{
+    color: #fff;
+    transition: .5s;
+    text-decoration: underline;
+}
+footer .top .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .top .social a{
+    color: #000;
+}
+footer .top .social .icon{
+    width: .7cm;
+    height: .7cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid var(--main-color2);
+    color: #000;
+    font-weight: bold;
+}
+footer .contact{
+    padding: 40px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+footer .contact form,
+footer .contact .right{
+    width: 50%;
+}
+footer .contact form{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    display: flex;
+    gap: 10px;
+}
+footer .contact form input{
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+footer .contact form button{
+    width: 50%;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    transition: .5s;
+    &:hover{
+        background-color: transparent;
+        color: #fff;
+    }
+}
+footer .end{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer .end a{
+    text-decoration: underline;
+    color: #fff;
+}
